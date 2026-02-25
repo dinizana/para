@@ -1,0 +1,78 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+h1 { color: #8e7d71; margin-bottom: 20px; }
+
+#btn-abrir {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #bfa89e;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(191, 168, 158, 0.4);
+}
+
+#btn-abrir:hover {
+    background-color: #a68d82;
+    transform: translateY(-3px);
+}
+
+.texto-carta {
+    text-align: left;
+    line-height: 1.6;
+    color: #444;
+    font-size: 1.05rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.texto-carta h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #a68d82;
+    font-size: 1.8rem;
+}
+
+.assinatura {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.hidden { display: none; }
+
+.btn-voltar {
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #ccc;
+    color: #999;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
